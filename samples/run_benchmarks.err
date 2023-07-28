@@ -1,0 +1,401 @@
+Monitoring simulation with http://localhost:37533
+panic: runtime error: index out of range [35] with length 1
+
+goroutine 34071 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc00029dcc0, 0xc00419cb75?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc00029dcc0, 0xc0004b1540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc0004b1540, {0x13b79c0?, 0xc0041a3da0?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0000000c0, {0x13b79c0, 0xc0041a3da0})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+Monitoring simulation with http://localhost:46787
+Monitoring simulation with http://localhost:37389
+Depth 0
+panic: runtime error: index out of range [11] with length 1
+
+goroutine 5917 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc0002cdc20, 0xc001369620?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc0002cdc20, 0xc0004c5540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc0004c5540, {0x13c0be0?, 0xc0034a2ba0?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc000308000, {0x13c0be0, 0xc0034a2ba0})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+Monitoring simulation with http://localhost:45831
+Monitoring simulation with http://localhost:33307
+Stage 0, pass 0
+panic: runtime error: index out of range [4] with length 1
+
+goroutine 4981 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc00024bcc0, 0xc0004cf088?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc00024bcc0, 0xc00059b540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc00059b540, {0x13b7b00?, 0xc0015a8ff0?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc000288000, {0x13b7b00, 0xc0015a8ff0})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+Monitoring simulation with http://localhost:46033
+Stage 0, pass 0
+panic: runtime error: index out of range [4] with length 1
+
+goroutine 21816 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc000295cc0, 0xc003cbf48a?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc000295cc0, 0xc0006c1540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc0006c1540, {0x13b9080?, 0xc003cd31d0?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0000000c0, {0x13b9080, 0xc003cd31d0})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+Monitoring simulation with http://localhost:38571
+2023/07/28 14:56:34 /home/user/workplace/go/mgpusim/driver/api.go:59: GPU 3 is not available
+panic: GPU 3 is not available
+
+goroutine 148 [running]:
+log.Panicf({0xae1869?, 0x0?}, {0xc000524750?, 0x0?, 0x0?})
+	/home/user/go/src/log/log.go:391 +0x67
+gitlab.com/akita/mgpusim/v3/driver.(*Driver).SelectGPU(...)
+	/home/user/workplace/go/mgpusim/driver/api.go:59
+gitlab.com/akita/mgpusim/v3/benchmarks/amdappsdk/bitonicsort.(*Benchmark).Run(0xc0001b8420?)
+	/home/user/workplace/go/mgpusim/benchmarks/amdappsdk/bitonicsort/bitonicsort.go:84 +0x85
+gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run.func1({0x13b9688, 0xc0001b8420}, 0x0?)
+	/home/user/workplace/go/mgpusim/samples/runner/runner.go:254 +0x6c
+created by gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run
+	/home/user/workplace/go/mgpusim/samples/runner/runner.go:247 +0x5e
+Monitoring simulation with http://localhost:33227
+panic: runtime error: index out of range [11] with length 1
+
+goroutine 6002 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc0002a1c20, 0xc00051ef78?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc0002a1c20, 0xc0004d7540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc0004d7540, {0x1566780?, 0xc0005594d0?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0000000c0, {0x1566780, 0xc0005594d0})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+Monitoring simulation with http://localhost:33385
+panic: runtime error: index out of range [4] with length 1
+
+goroutine 4942 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc00029fc20, 0xc000fa7328?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc00029fc20, 0xc0004d5540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc0004d5540, {0x13b78c0?, 0xc000778de0?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0000000c0, {0x13b78c0, 0xc000778de0})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+Monitoring simulation with http://localhost:35117
+Monitoring simulation with http://localhost:34437
+panic: runtime error: index out of range [20] with length 1
+
+goroutine 10351 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc00033bcc0, 0xc004006e49?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc00033bcc0, 0xc000505540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc000505540, {0x13b7a00?, 0xc00400c510?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc000378000, {0x13b7a00, 0xc00400c510})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+Monitoring simulation with http://localhost:34217
+panic: runtime error: index out of range [6] with length 1
+
+goroutine 4240 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc00024dcc0, 0xc0065402c4?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc00024dcc0, 0xc0007f1540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc0007f1540, {0x13b7a60?, 0xc006542660?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc000288000, {0x13b7a60, 0xc006542660})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+Monitoring simulation with http://localhost:42683
+panic: runtime error: index out of range [18] with length 1
+
+goroutine 5176 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc0002a1c20, 0xc0013a3bac?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc0002a1c20, 0xc0004d3540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc0004d3540, {0x1563ca0?, 0xc0039a1d40?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0000000c0, {0x1563ca0, 0xc0039a1d40})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+Monitoring simulation with http://localhost:46363
+panic: runtime error: index out of range [144] with length 1
+
+goroutine 60319 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc0002cdc20, 0xc004786ad9?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc0002cdc20, 0xc00058b540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc00058b540, {0x13b9000?, 0xc004791e30?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc000308000, {0x13b9000, 0xc004791e30})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+Monitoring simulation with http://localhost:45621
+panic: /home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/mnist/data/train-images-idx3-ubyte.gz not found.
+
+goroutine 163 [running]:
+gitlab.com/akita/dnn/dataset/mnist.openGZip({0xc0001721c0, 0x69})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/mnist/mnist.go:87 +0x99
+gitlab.com/akita/dnn/dataset/mnist.(*DataSet).OpenTrainingFile(0xc000168600)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/mnist/mnist.go:30 +0x109
+gitlab.com/akita/dnn/dataset/mnist.NewTrainingDataSource({0x1579250?, 0xc003a28000})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/mnist/datasource.go:26 +0xa5
+gitlab.com/akita/mgpusim/v3/benchmarks/dnn/lenet.(*Benchmark).createTrainer(0xc000294000)
+	/home/user/workplace/go/mgpusim/benchmarks/dnn/lenet/benchmark.go:118 +0x110
+gitlab.com/akita/mgpusim/v3/benchmarks/dnn/lenet.(*Benchmark).init(0xc000294000)
+	/home/user/workplace/go/mgpusim/benchmarks/dnn/lenet/benchmark.go:56 +0x6a
+gitlab.com/akita/mgpusim/v3/benchmarks/dnn/lenet.(*Benchmark).Run(0xc000294000)
+	/home/user/workplace/go/mgpusim/benchmarks/dnn/lenet/benchmark.go:185 +0x36
+gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run.func1({0x1571d98, 0xc000294000}, 0x0?)
+	/home/user/workplace/go/mgpusim/samples/runner/runner.go:254 +0x6c
+created by gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run
+	/home/user/workplace/go/mgpusim/samples/runner/runner.go:247 +0x5e
+Monitoring simulation with http://localhost:37651
+panic: runtime error: index out of range [25] with length 1
+
+goroutine 18518 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc000295cc0, 0xc006791cc5?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc000295cc0, 0xc000687540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc000687540, {0x13b7ca0?, 0xc003f2ede0?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0000000c0, {0x13b7ca0, 0xc003f2ede0})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+Monitoring simulation with http://localhost:45967
+Monitoring simulation with http://localhost:43441
+Monitoring simulation with http://localhost:38071
+panic: /home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/mnist/data/train-images-idx3-ubyte.gz not found.
+
+goroutine 134 [running]:
+gitlab.com/akita/dnn/dataset/mnist.openGZip({0xc00021a230, 0x69})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/mnist/mnist.go:87 +0x99
+gitlab.com/akita/dnn/dataset/mnist.(*DataSet).OpenTrainingFile(0xc00146c400)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/mnist/mnist.go:30 +0x109
+gitlab.com/akita/dnn/dataset/mnist.NewTrainingDataSource({0x1575750?, 0xc003c0c5a0})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/mnist/datasource.go:26 +0xa5
+gitlab.com/akita/mgpusim/v3/benchmarks/dnn/minerva.(*Benchmark).createTrainer(0xc003427b00)
+	/home/user/workplace/go/mgpusim/benchmarks/dnn/minerva/benchmark.go:93 +0x110
+gitlab.com/akita/mgpusim/v3/benchmarks/dnn/minerva.(*Benchmark).init(0xc003427b00)
+	/home/user/workplace/go/mgpusim/benchmarks/dnn/minerva/benchmark.go:56 +0x6a
+gitlab.com/akita/mgpusim/v3/benchmarks/dnn/minerva.(*Benchmark).Run(0xc003427b00)
+	/home/user/workplace/go/mgpusim/benchmarks/dnn/minerva/benchmark.go:160 +0x36
+gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run.func1({0x156e318, 0xc003427b00}, 0x0?)
+	/home/user/workplace/go/mgpusim/samples/runner/runner.go:254 +0x6c
+created by gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run
+	/home/user/workplace/go/mgpusim/samples/runner/runner.go:247 +0x5e
+Monitoring simulation with http://localhost:36129
+panic: runtime error: index out of range [11] with length 1
+
+goroutine 7333 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc00029fc20, 0xc000002920?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc00029fc20, 0xc0004d9540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc0004d9540, {0x13b7cc0?, 0xc003d88de0?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0000000c0, {0x13b7cc0, 0xc003d88de0})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+Monitoring simulation with http://localhost:35011
+panic: runtime error: index out of range [37] with length 1
+
+goroutine 19247 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc00024dc20, 0xc006a1a535?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc00024dc20, 0xc0007ed540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc0007ed540, {0x13b7cc0?, 0xc003fc12c0?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc000288000, {0x13b7cc0, 0xc003fc12c0})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+Monitoring simulation with http://localhost:33331
+Number node 16, number connection 16
+panic: runtime error: index out of range [13] with length 1
+
+goroutine 5735 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc00029fc20, 0xc000029300?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc00029fc20, 0xc000759540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc000759540, {0x13b9140?, 0xc00052c9f0?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0000000c0, {0x13b9140, 0xc00052c9f0})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+Monitoring simulation with http://localhost:39955
+panic: runtime error: index out of range [16] with length 1
+
+goroutine 10152 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc0002a1c20, 0xc00246c1e5?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc0002a1c20, 0xc000729540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc000729540, {0x13b78e0?, 0xc00246e210?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0000000c0, {0x13b78e0, 0xc00246e210})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+Monitoring simulation with http://localhost:38677
+Monitoring simulation with http://localhost:46139
+Number of non-zero elements 163
+panic: runtime error: index out of range [13] with length 1
+
+goroutine 7661 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc00029fc20, 0xc003c240b8?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc00029fc20, 0xc00070f540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc00070f540, {0x13b9140?, 0xc003b83bc0?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0000000c0, {0x13b9140, 0xc003b83bc0})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+panic: runtime error: index out of range [296] with length 1
+
+goroutine 231188 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc00029fcc0, 0xc0059d00a6?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc00029fcc0, 0xc0006ef540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc0006ef540, {0x13b7c20?, 0xc0059ce960?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0000000c0, {0x13b7c20, 0xc0059ce960})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+Monitoring simulation with http://localhost:35097
+panic: runtime error: index out of range [25] with length 1
+
+goroutine 24428 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc00029fc20, 0xc006574050?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc00029fc20, 0xc0006b3540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc0006b3540, {0x13b7cc0?, 0xc006567bc0?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0000000c0, {0x13b7cc0, 0xc006567bc0})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+Monitoring simulation with http://localhost:44785
+panic: open /home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/imagenet/wnids.txt: no such file or directory
+
+goroutine 79 [running]:
+gitlab.com/akita/dnn/dataset/imagenet.dieOnErr(...)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/imagenet/imagenet.go:164
+gitlab.com/akita/dnn/dataset/imagenet.NewDataSet(0x1)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/imagenet/imagenet.go:44 +0x55f
+gitlab.com/akita/dnn/dataset/imagenet.NewTrainingDataSource(...)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/imagenet/datasource.go:21
+gitlab.com/akita/mgpusim/v3/benchmarks/dnn/vgg16.(*Benchmark).createTrainer(0xc0002a8180)
+	/home/user/workplace/go/mgpusim/benchmarks/dnn/vgg16/benchmark.go:126 +0x18f
+gitlab.com/akita/mgpusim/v3/benchmarks/dnn/vgg16.(*Benchmark).init(0xc0002a8180)
+	/home/user/workplace/go/mgpusim/benchmarks/dnn/vgg16/benchmark.go:55 +0x6a
+gitlab.com/akita/mgpusim/v3/benchmarks/dnn/vgg16.(*Benchmark).Run(0xc0002a8180)
+	/home/user/workplace/go/mgpusim/benchmarks/dnn/vgg16/benchmark.go:193 +0x36
+gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run.func1({0x15a7388, 0xc0002a8180}, 0x0?)
+	/home/user/workplace/go/mgpusim/samples/runner/runner.go:254 +0x6c
+created by gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run
+	/home/user/workplace/go/mgpusim/samples/runner/runner.go:247 +0x5e
+Monitoring simulation with http://localhost:34261
+2023/07/28 14:57:26 /home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/training/trainer.go:34: Epoch 0
+2023/07/28 14:57:26 /home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/training/trainer.go:41: Batch 0
+2023/07/28 14:57:26 /home/user/workplace/go/mgpusim/driver/driver.go:117: Panic: runtime error: index out of range [15] with length 1
+goroutine 183 [running]:
+runtime/debug.Stack()
+	/home/user/go/src/runtime/debug/stack.go:24 +0x65
+runtime/debug.PrintStack()
+	/home/user/go/src/runtime/debug/stack.go:16 +0x19
+gitlab.com/akita/mgpusim/v3/driver.(*Driver).runEngine.func1()
+	/home/user/workplace/go/mgpusim/driver/driver.go:118 +0x58
+panic({0xc251e0, 0xc00639ea68})
+	/home/user/go/src/runtime/panic.go:884 +0x213
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc00024fc20, 0xc0063f8c10?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc00024fc20, 0xc000447980?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc000447980, {0x1568780?, 0xc000460060?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*SerialEngine).Run(0xc0001ec3f0)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/serialengine.go:96 +0x364
+gitlab.com/akita/mgpusim/v3/driver.(*Driver).runEngine(0xc0001831e0)
+	/home/user/workplace/go/mgpusim/driver/driver.go:125 +0xaa
+created by gitlab.com/akita/mgpusim/v3/driver.(*Driver).runAsync
+	/home/user/workplace/go/mgpusim/driver/driver.go:108 +0x185
+panic: runtime error: index out of range [4813] with length 1
+
+goroutine 3669015 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc00024bcc0, 0xc0102053c7?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc00024bcc0, 0xc000609540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc000609540, {0x13b7b00?, 0xc010214450?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc000288000, {0x13b7b00, 0xc010214450})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+panic: runtime error: index out of range [38501] with length 1
+
+goroutine 29219165 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc00029fc20, 0xc0330472e8?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc00029fc20, 0xc000477540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc000477540, {0x13b7ae0?, 0xc02d027b60?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0000000c0, {0x13b7ae0, 0xc02d027b60})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
+panic: runtime error: index out of range [38491] with length 1
+
+goroutine 29222845 [running]:
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).lookup(0xc00024dc20, 0xc030ad2f48?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:111 +0x24f
+gitlab.com/akita/mem/v3/vm/tlb.(*TLB).Tick(0xc00024dc20, 0xc00077b540?)
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/mem/v3@v3.0.0-alpha.10/vm/tlb/tlb.go:57 +0x90
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc00077b540, {0x13b7ba0?, 0xc020baab40?})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc000288000, {0x13b7ba0, 0xc020baab40})
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x20f
+created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
+	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa

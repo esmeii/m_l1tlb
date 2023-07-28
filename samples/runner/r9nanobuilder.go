@@ -811,14 +811,14 @@ func (b *R9NanoGPUBuilder) buildCP() {
 }
 
 func (b *R9NanoGPUBuilder) buildL2TLB() {
-	numWays := 64
+	numWays := 16 //64
 	builder := tlb.MakeBuilder().
 		WithEngine(b.engine).
 		WithFreq(b.freq).
 		WithNumWays(numWays).
-		WithNumSets(int(b.dramSize / (1 << b.log2PageSize) / uint64(numWays))).
+		WithNumSets(32).
 		WithNumMSHREntry(64).
-		WithNumReqPerCycle(1024).
+		WithNumReqPerCycle(16).
 		WithPageSize(1 << b.log2PageSize).
 		WithLowModule(b.mmu.GetPortByName("Top"))
 

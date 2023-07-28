@@ -333,8 +333,8 @@ func (b *shaderArrayBuilder) buildL1VTLBs(sa *shaderArray) {
 		WithFreq(b.freq).
 		WithNumMSHREntry(4).
 		WithNumSets(1).
-		WithNumWays(64).
-		WithNumReqPerCycle(4)
+		WithNumWays(32). //32
+		WithNumReqPerCycle(4) //4
 
 	for i := 0; i < b.numCU; i++ {
 		name := fmt.Sprintf("%s.L1VTLB[%d]", b.name, i)

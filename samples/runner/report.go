@@ -373,6 +373,8 @@ func (r *Runner) reportInstCount() {
 			t.cu.Name(), "cu_CPI", numCycle/float64(t.tracer.count))
 
 		r.metricsCollector.Collect(
+			t.cu.Name(), "cu_IPC", float64(t.tracer.count)/numCycle)
+		r.metricsCollector.Collect(
 			t.cu.Name(), "simd_inst_count", float64(t.tracer.simdCount))
 
 		r.metricsCollector.Collect(
@@ -481,7 +483,11 @@ func (r *Runner) reportTLBHitRate() {
 		r.metricsCollector.Collect(
 			tracer.tlb.Name(), "hit", float64(hit))
 		r.metricsCollector.Collect(
+			tracer.tlb.Name(), "hit-ratio", float64(miss/totalTransaction))
+		r.metricsCollector.Collect(
 			tracer.tlb.Name(), "miss", float64(miss))
+		r.metricsCollector.Collect(
+			tracer.tlb.Name(), "miss-raiot", float64(miss/totalTransaction))
 		r.metricsCollector.Collect(
 			tracer.tlb.Name(), "mshr-hit", float64(mshrHit))
 	}
