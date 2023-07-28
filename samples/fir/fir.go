@@ -7,7 +7,7 @@ import (
 	"gitlab.com/akita/mgpusim/v3/samples/runner"
 )
 
-var numData = flag.Int("length", 4096, "The number of samples to filter.")
+var numData = flag.Int("length", 524288, "The number of samples to filter.") //4096
 
 func main() {
 	flag.Parse()

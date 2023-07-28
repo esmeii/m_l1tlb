@@ -7,7 +7,7 @@ import (
 	"gitlab.com/akita/mgpusim/v3/samples/runner"
 )
 
-var length = flag.Int("length", 1024, "The length of array to sort.")
+var length = flag.Int("length", 524288, "The length of array to sort.") //1024
 var orderAscending = flag.Bool("order-asc", true, "Sorting in ascending order.")
 
 func main() {

@@ -16,11 +16,11 @@ func main() {
 	runner := new(runner.Runner).ParseFlag().Init()
 
 	firBenchmark := fir.NewBenchmark(runner.Driver())
-	firBenchmark.Length = 10240
+	firBenchmark.Length = 102400 //10240
 	firBenchmark.SelectGPU([]int{1, 2})
 
 	bsBenchmark := bitonicsort.NewBenchmark(runner.Driver())
-	bsBenchmark.Length = 64
+	bsBenchmark.Length = 512 //64
 	bsBenchmark.SelectGPU([]int{3})
 
 	runner.AddBenchmarkWithoutSettingGPUsToUse(firBenchmark)

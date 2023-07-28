@@ -7,8 +7,8 @@ import (
 	"gitlab.com/akita/mgpusim/v3/samples/runner"
 )
 
-var widthFlag = flag.Uint("width", 254, "The width of the input matrix.")
-var heightFlag = flag.Uint("height", 254, "The height of the input matrix.")
+var widthFlag = flag.Uint("width", 512, "The width of the input matrix.")
+var heightFlag = flag.Uint("height", 512, "The height of the input matrix.") //254
 var maskSizeFlag = flag.Uint("mask-size", 3, "The size of the mask.")
 
 func main() {

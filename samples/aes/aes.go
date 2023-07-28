@@ -7,7 +7,7 @@ import (
 	"gitlab.com/akita/mgpusim/v3/samples/runner"
 )
 
-var lenInput = flag.Int("length", 65536, "The length of array to sort.")
+var lenInput = flag.Int("length", 524288, "The length of array to sort.") //65536
 
 func main() {
 	flag.Parse()

@@ -8,7 +8,7 @@ import (
 )
 
 // Dim is dimension
-var Dim = flag.Int("dim", 128, "The number of rows in the input matrix.")
+var Dim = flag.Int("dim", 524288, "The number of rows in the input matrix.") //1024
 
 // Sparsity is sparsity
 var Sparsity = flag.Float64("sparsity", 0.01,
