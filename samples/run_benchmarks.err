@@ -1,230 +1,106 @@
-Monitoring simulation with http://localhost:43031
-Monitoring simulation with http://localhost:32961
-Monitoring simulation with http://localhost:40355
+Monitoring simulation with http://localhost:38165
+Monitoring simulation with http://localhost:46463
+Monitoring simulation with http://localhost:33713
 Depth 0
 Depth 1
+Monitoring simulation with http://localhost:33363
 Depth 2
-Monitoring simulation with http://localhost:40709
 Depth 3
-Monitoring simulation with http://localhost:34015
-Monitoring simulation with http://localhost:37263
+Monitoring simulation with http://localhost:45691
+Monitoring simulation with http://localhost:40583
 Stage 0, pass 0
-Monitoring simulation with http://localhost:35275
-2023/08/03 14:23:49 /home/user/workplace/go/mgpusim/driver/api.go:59: GPU 3 is not available
+Monitoring simulation with http://localhost:38051
+2023/08/04 08:49:22 /home/user/workplace/go/mgpusim/driver/api.go:59: GPU 3 is not available
 panic: GPU 3 is not available
 
-goroutine 150 [running]:
-log.Panicf({0xab9e82?, 0x0?}, {0xc0004cc750?, 0x0?, 0x0?})
+goroutine 97 [running]:
+log.Panicf({0xab9e82?, 0x0?}, {0xc0002faf50?, 0x0?, 0x0?})
 	/usr/local/go/src/log/log.go:395 +0x67
 gitlab.com/akita/mgpusim/v3/driver.(*Driver).SelectGPU(...)
 	/home/user/workplace/go/mgpusim/driver/api.go:59
-gitlab.com/akita/mgpusim/v3/benchmarks/amdappsdk/bitonicsort.(*Benchmark).Run(0xc000218420?)
+gitlab.com/akita/mgpusim/v3/benchmarks/amdappsdk/bitonicsort.(*Benchmark).Run(0xc0001bc420?)
 	/home/user/workplace/go/mgpusim/benchmarks/amdappsdk/bitonicsort/bitonicsort.go:84 +0x85
-gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run.func1({0x139d4c0, 0xc000218420}, 0x0?)
+gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run.func1({0x139d4c0, 0xc0001bc420}, 0x0?)
 	/home/user/workplace/go/mgpusim/samples/runner/runner.go:254 +0x6c
 created by gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run
 	/home/user/workplace/go/mgpusim/samples/runner/runner.go:247 +0x1ca
 Stage 1, pass 0
-Monitoring simulation with http://localhost:45411
-Monitoring simulation with http://localhost:36695
+Monitoring simulation with http://localhost:32845
+Monitoring simulation with http://localhost:36721
 panic: Could not find parent task
 
-goroutine 407106 [running]:
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleReqEnd(0xc00062b5e0, {{0xc004f566c0, 0xe}, {0xc00664abc6, 0x6}, {0xc40546, 0x7}, {0xb3b915, 0xc}, {0xc00002af90, ...}, ...})
+goroutine 406812 [running]:
+gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleReqEnd(0xc003af9b20, {{0xc00588edc0, 0xe}, {0xc001037866, 0x6}, {0xc40546, 0x7}, {0xb3b915, 0xc}, {0xc0001c4228, ...}, ...})
 	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:311 +0x288
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleTaskEnd(0xc00062b5e0, {{0xc004f566c0, 0xe}, {0xc00664abc6, 0x6}, {0xc40546, 0x7}, {0xb3b915, 0xc}, {0xc00002af90, ...}, ...})
+gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleTaskEnd(0xc003af9b20, {{0xc00588edc0, 0xe}, {0xc001037866, 0x6}, {0xc40546, 0x7}, {0xb3b915, 0xc}, {0xc0001c4228, ...}, ...})
 	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:358 +0x125
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).EndTask(0xc00062b5e0, {{0xc008f82b30, 0xe}, {0x0, 0x0}, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...})
+gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).EndTask(0xc003af9b20, {{0xc003f99b10, 0xe}, {0x0, 0x0}, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...})
 	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:231 +0x145
-gitlab.com/akita/akita/v3/tracing.(*traceHook).Func(0xc00160e400?, {{0x7f5d006f30a8, 0xc0002ab400}, 0x18e40c0, {0xc0f560, 0xc0013dbc20}, {0x0, 0x0}})
+gitlab.com/akita/akita/v3/tracing.(*traceHook).Func(0xc004588000?, {{0x7f7518075fc8, 0xc000261b80}, 0x18e40c0, {0xc0f560, 0xc003c5ebd0}, {0x0, 0x0}})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/tracehook.go:39 +0x2b5
-gitlab.com/akita/akita/v3/sim.(*HookableBase).InvokeHook(0xc0f560?, {{0x7f5d006f30a8, 0xc0002ab400}, 0x18e40c0, {0xc0f560, 0xc0013dbc20}, {0x0, 0x0}})
+gitlab.com/akita/akita/v3/sim.(*HookableBase).InvokeHook(0xc0f560?, {{0x7f7518075fc8, 0xc000261b80}, 0x18e40c0, {0xc0f560, 0xc003c5ebd0}, {0x0, 0x0}})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/hook.go:81 +0xc4
-gitlab.com/akita/akita/v3/tracing.EndTask({0xc008f82b30, 0xe}, {0x15505c0, 0xc0002ab400})
+gitlab.com/akita/akita/v3/tracing.EndTask({0xc003f99b10, 0xe}, {0x15505c0, 0xc000261b80})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/api.go:151 +0x155
-gitlab.com/akita/akita/v3/tracing.TraceReqFinalize({0x154a560?, 0xc00794fa80?}, {0x15505c0, 0xc0002ab400})
+gitlab.com/akita/akita/v3/tracing.TraceReqFinalize({0x154a560?, 0xc003d00180?}, {0x15505c0, 0xc000261b80})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/api.go:208 +0x5a
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).handleScalarDataLoadReturn(0xc0002ab400, 0xc007e38dc0?, 0xc00690d700)
+gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).handleScalarDataLoadReturn(0xc000261b80, 0xc0040c0dc0?, 0xc0041ce400)
 	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:472 +0x1c9
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInputFromScalarMem(0xc0002ab400, 0x4?)
+gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInputFromScalarMem(0xc000261b80, 0x4?)
 	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:439 +0x75
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInput(0xc0002ab400, 0x3f0788a1937ce3c5?)
+gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInput(0xc000261b80, 0x3f0788a1937ce3c5?)
 	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:171 +0x67
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).Tick(0xc0002ab400, 0xc000ba5780?)
+gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).Tick(0xc000261b80, 0xc0012278e0?)
 	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:120 +0xed
-gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc000ba5780, {0x154edc0?, 0xc006b2ccf0?})
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc0012278e0, {0x154edc0?, 0xc004bd3680?})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
-gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0002e0000, {0x154edc0, 0xc006b2ccf0})
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc000294000, {0x154edc0, 0xc004bd3680})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x193
 created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
 panic: Could not find parent task
 
-goroutine 407121 [running]:
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleReqEnd(0xc00062b7a0, {{0xc007858390, 0xe}, {0xc0059db860, 0x6}, {0xc40546, 0x7}, {0xb3b915, 0xc}, {0xc00002b5f0, ...}, ...})
+goroutine 406815 [running]:
+gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleReqEnd(0xc003af9ce0, {{0xc00641e4a0, 0xe}, {0xc0010376a6, 0x6}, {0xc40546, 0x7}, {0xb3b915, 0xc}, {0xc0001c4918, ...}, ...})
 	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:311 +0x288
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleTaskEnd(0xc00062b7a0, {{0xc007858390, 0xe}, {0xc0059db860, 0x6}, {0xc40546, 0x7}, {0xb3b915, 0xc}, {0xc00002b5f0, ...}, ...})
+gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleTaskEnd(0xc003af9ce0, {{0xc00641e4a0, 0xe}, {0xc0010376a6, 0x6}, {0xc40546, 0x7}, {0xb3b915, 0xc}, {0xc0001c4918, ...}, ...})
 	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:358 +0x125
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).EndTask(0xc00062b7a0, {{0xc00745bcd0, 0xe}, {0x0, 0x0}, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...})
+gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).EndTask(0xc003af9ce0, {{0xc002c4bfd0, 0xe}, {0x0, 0x0}, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...})
 	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:231 +0x145
-gitlab.com/akita/akita/v3/tracing.(*traceHook).Func(0xc003000400?, {{0x7f5d006f30a8, 0xc000004c80}, 0x18e40c0, {0xc0f560, 0xc0083290e0}, {0x0, 0x0}})
+gitlab.com/akita/akita/v3/tracing.(*traceHook).Func(0xc0068a8000?, {{0x7f7518075fc8, 0xc00020ac80}, 0x18e40c0, {0xc0f560, 0xc002b65dd0}, {0x0, 0x0}})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/tracehook.go:39 +0x2b5
-gitlab.com/akita/akita/v3/sim.(*HookableBase).InvokeHook(0xc0f560?, {{0x7f5d006f30a8, 0xc000004c80}, 0x18e40c0, {0xc0f560, 0xc0083290e0}, {0x0, 0x0}})
+gitlab.com/akita/akita/v3/sim.(*HookableBase).InvokeHook(0xc0f560?, {{0x7f7518075fc8, 0xc00020ac80}, 0x18e40c0, {0xc0f560, 0xc002b65dd0}, {0x0, 0x0}})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/hook.go:81 +0xc4
-gitlab.com/akita/akita/v3/tracing.EndTask({0xc00745bcd0, 0xe}, {0x15505c0, 0xc000004c80})
+gitlab.com/akita/akita/v3/tracing.EndTask({0xc002c4bfd0, 0xe}, {0x15505c0, 0xc00020ac80})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/api.go:151 +0x155
-gitlab.com/akita/akita/v3/tracing.TraceReqFinalize({0x154a560?, 0xc00692a280?}, {0x15505c0, 0xc000004c80})
+gitlab.com/akita/akita/v3/tracing.TraceReqFinalize({0x154a560?, 0xc0008f8680?}, {0x15505c0, 0xc00020ac80})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/api.go:208 +0x5a
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).handleScalarDataLoadReturn(0xc000004c80, 0xc000353dc0?, 0xc006612b80)
+gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).handleScalarDataLoadReturn(0xc00020ac80, 0xc000158dc0?, 0xc005581300)
 	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:472 +0x1c9
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInputFromScalarMem(0xc000004c80, 0x4?)
+gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInputFromScalarMem(0xc00020ac80, 0x4?)
 	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:439 +0x75
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInput(0xc000004c80, 0x3f0788a1937ce3c5?)
+gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInput(0xc00020ac80, 0x3f0788a1937ce3c5?)
 	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:171 +0x67
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).Tick(0xc000004c80, 0xc000da8920?)
+gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).Tick(0xc00020ac80, 0xc000e80e40?)
 	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:120 +0xed
-gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc000da8920, {0x154edc0?, 0xc0043986f0?})
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc000e80e40, {0x154edc0?, 0xc004bd3740?})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
-gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0002e0000, {0x154edc0, 0xc0043986f0})
+gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc000294000, {0x154edc0, 0xc004bd3740})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x193
 created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
-panic: Could not find parent task
-
-goroutine 407103 [running]:
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleReqEnd(0xc00062b960, {{0xc0071e42c0, 0xe}, {0xc0059db826, 0x6}, {0xc40546, 0x7}, {0xb3b915, 0xc}, {0xc00002bc50, ...}, ...})
-	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:311 +0x288
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleTaskEnd(0xc00062b960, {{0xc0071e42c0, 0xe}, {0xc0059db826, 0x6}, {0xc40546, 0x7}, {0xb3b915, 0xc}, {0xc00002bc50, ...}, ...})
-	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:358 +0x125
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).EndTask(0xc00062b960, {{0xc0089853a0, 0xe}, {0x0, 0x0}, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...})
-	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:231 +0x145
-gitlab.com/akita/akita/v3/tracing.(*traceHook).Func(0xc008300000?, {{0x7f5d006f30a8, 0xc000005680}, 0x18e40c0, {0xc0f560, 0xc001415950}, {0x0, 0x0}})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/tracehook.go:39 +0x2b5
-gitlab.com/akita/akita/v3/sim.(*HookableBase).InvokeHook(0xc0f560?, {{0x7f5d006f30a8, 0xc000005680}, 0x18e40c0, {0xc0f560, 0xc001415950}, {0x0, 0x0}})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/hook.go:81 +0xc4
-gitlab.com/akita/akita/v3/tracing.EndTask({0xc0089853a0, 0xe}, {0x15505c0, 0xc000005680})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/api.go:151 +0x155
-gitlab.com/akita/akita/v3/tracing.TraceReqFinalize({0x154a560?, 0xc00152a980?}, {0x15505c0, 0xc000005680})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/api.go:208 +0x5a
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).handleScalarDataLoadReturn(0xc000005680, 0xc008241dc0?, 0xc0012fec80)
-	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:472 +0x1c9
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInputFromScalarMem(0xc000005680, 0x4?)
-	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:439 +0x75
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInput(0xc000005680, 0x3f0788a1937ce3c5?)
-	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:171 +0x67
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).Tick(0xc000005680, 0xc000fbd9c0?)
-	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:120 +0xed
-gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc000fbd9c0, {0x154edc0?, 0xc0003948a0?})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
-gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0002e0000, {0x154edc0, 0xc0003948a0})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x193
-created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
-panic: Could not find parent task
-
-goroutine 407111 [running]:
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleReqEnd(0xc000938cb0, {{0xc00664b0d0, 0xe}, {0xc004f56316, 0x6}, {0xc40546, 0x7}, {0xb3b915, 0xc}, {0xc0001d8b58, ...}, ...})
-	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:311 +0x288
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleTaskEnd(0xc000938cb0, {{0xc00664b0d0, 0xe}, {0xc004f56316, 0x6}, {0xc40546, 0x7}, {0xb3b915, 0xc}, {0xc0001d8b58, ...}, ...})
-	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:358 +0x125
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).EndTask(0xc000938cb0, {{0xc008d036b0, 0xe}, {0x0, 0x0}, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...})
-	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:231 +0x145
-gitlab.com/akita/akita/v3/tracing.(*traceHook).Func(0xc003100400?, {{0x7f5d006f30a8, 0xc002ea7400}, 0x18e40c0, {0xc0f560, 0xc0012d7710}, {0x0, 0x0}})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/tracehook.go:39 +0x2b5
-gitlab.com/akita/akita/v3/sim.(*HookableBase).InvokeHook(0xc0f560?, {{0x7f5d006f30a8, 0xc002ea7400}, 0x18e40c0, {0xc0f560, 0xc0012d7710}, {0x0, 0x0}})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/hook.go:81 +0xc4
-gitlab.com/akita/akita/v3/tracing.EndTask({0xc008d036b0, 0xe}, {0x15505c0, 0xc002ea7400})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/api.go:151 +0x155
-gitlab.com/akita/akita/v3/tracing.TraceReqFinalize({0x154a560?, 0xc0043af000?}, {0x15505c0, 0xc002ea7400})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/api.go:208 +0x5a
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).handleScalarDataLoadReturn(0xc002ea7400, 0xc003cecdc0?, 0xc00690dd00)
-	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:472 +0x1c9
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInputFromScalarMem(0xc002ea7400, 0x4?)
-	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:439 +0x75
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInput(0xc002ea7400, 0x3f0788a1937ce3c5?)
-	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:171 +0x67
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).Tick(0xc002ea7400, 0xc0024720a0?)
-	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:120 +0xed
-gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc0024720a0, {0x154edc0?, 0xc000394960?})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
-gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0002e0000, {0x154edc0, 0xc000394960})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x193
-created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
-panic: Could not find parent task
-
-goroutine 407128 [running]:
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleReqEnd(0xc000938af0, {{0xc00534e950, 0xe}, {0xc004e5c4a6, 0x6}, {0xc40546, 0x7}, {0xb3b915, 0xc}, {0xc0001d8738, ...}, ...})
-	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:311 +0x288
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleTaskEnd(0xc000938af0, {{0xc00534e950, 0xe}, {0xc004e5c4a6, 0x6}, {0xc40546, 0x7}, {0xb3b915, 0xc}, {0xc0001d8738, ...}, ...})
-	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:358 +0x125
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).EndTask(0xc000938af0, {{0xc0088a3550, 0xe}, {0x0, 0x0}, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...})
-	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:231 +0x145
-gitlab.com/akita/akita/v3/tracing.(*traceHook).Func(0xc000700400?, {{0x7f5d006f30a8, 0xc002ea6a00}, 0x18e40c0, {0xc0f560, 0xc004174bd0}, {0x0, 0x0}})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/tracehook.go:39 +0x2b5
-gitlab.com/akita/akita/v3/sim.(*HookableBase).InvokeHook(0xc0f560?, {{0x7f5d006f30a8, 0xc002ea6a00}, 0x18e40c0, {0xc0f560, 0xc004174bd0}, {0x0, 0x0}})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/hook.go:81 +0xc4
-gitlab.com/akita/akita/v3/tracing.EndTask({0xc0088a3550, 0xe}, {0x15505c0, 0xc002ea6a00})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/api.go:151 +0x155
-gitlab.com/akita/akita/v3/tracing.TraceReqFinalize({0x154a560?, 0xc003231780?}, {0x15505c0, 0xc002ea6a00})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/api.go:208 +0x5a
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).handleScalarDataLoadReturn(0xc002ea6a00, 0xc00823fdc0?, 0xc000ac5f00)
-	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:472 +0x1c9
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInputFromScalarMem(0xc002ea6a00, 0x4?)
-	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:439 +0x75
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInput(0xc002ea6a00, 0x3f0788a1937ce3c5?)
-	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:171 +0x67
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).Tick(0xc002ea6a00, 0xc000d55e60?)
-	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:120 +0xed
-gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc000d55e60, {0x154edc0?, 0xc006d1da70?})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
-gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0002e0000, {0x154edc0, 0xc006d1da70})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x193
-created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
-panic: Could not find parent task
-
-goroutine 407108 [running]:
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleReqEnd(0xc00062bea0, {{0xc006bbd420, 0xe}, {0xc0065d5a60, 0x6}, {0xc40546, 0x7}, {0xb3b915, 0xc}, {0xc000914fa8, ...}, ...})
-	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:311 +0x288
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleTaskEnd(0xc00062bea0, {{0xc006bbd420, 0xe}, {0xc0065d5a60, 0x6}, {0xc40546, 0x7}, {0xb3b915, 0xc}, {0xc000914fa8, ...}, ...})
-	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:358 +0x125
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).EndTask(0xc00062bea0, {{0xc00758c540, 0xe}, {0x0, 0x0}, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...})
-	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:231 +0x145
-gitlab.com/akita/akita/v3/tracing.(*traceHook).Func(0xc008880000?, {{0x7f5d006f30a8, 0xc0018f2000}, 0x18e40c0, {0xc0f560, 0xc007617680}, {0x0, 0x0}})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/tracehook.go:39 +0x2b5
-gitlab.com/akita/akita/v3/sim.(*HookableBase).InvokeHook(0xc0f560?, {{0x7f5d006f30a8, 0xc0018f2000}, 0x18e40c0, {0xc0f560, 0xc007617680}, {0x0, 0x0}})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/hook.go:81 +0xc4
-gitlab.com/akita/akita/v3/tracing.EndTask({0xc00758c540, 0xe}, {0x15505c0, 0xc0018f2000})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/api.go:151 +0x155
-gitlab.com/akita/akita/v3/tracing.TraceReqFinalize({0x154a560?, 0xc008a85180?}, {0x15505c0, 0xc0018f2000})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/api.go:208 +0x5a
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).handleScalarDataLoadReturn(0xc0018f2000, 0xc00823adc0?, 0xc007392a80)
-	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:472 +0x1c9
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInputFromScalarMem(0xc0018f2000, 0x4?)
-	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:439 +0x75
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInput(0xc0018f2000, 0x3f0788a1937ce3c5?)
-	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:171 +0x67
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).Tick(0xc0018f2000, 0xc0018e3200?)
-	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:120 +0xed
-gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc0018e3200, {0x154edc0?, 0xc00424a120?})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
-gitlab.com/akita/akita/v3/sim.(*ParallelEngine).tempWorkerRun(0xc0002e0000, {0x154edc0, 0xc00424a120})
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:270 +0x193
-created by gitlab.com/akita/akita/v3/sim.(*ParallelEngine).runEventWithTempWorker
-	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/parallelengine.go:252 +0xaa
-Monitoring simulation with http://localhost:39639
-Monitoring simulation with http://localhost:40953
-Monitoring simulation with http://localhost:46473
-Stage 1, pass 1
+Monitoring simulation with http://localhost:35031
+Monitoring simulation with http://localhost:35009
+Monitoring simulation with http://localhost:37615
 Stage 0, pass 0
-Monitoring simulation with http://localhost:39693
+Stage 1, pass 1
+Monitoring simulation with http://localhost:39549
 Stage 2, pass 0
 Stage 2, pass 1
 Stage 2, pass 2
 Stage 3, pass 0
+Monitoring simulation with http://localhost:37029
 Stage 3, pass 1
-Monitoring simulation with http://localhost:42699
 Stage 3, pass 2
 Stage 3, pass 3
 Stage 4, pass 0
@@ -233,28 +109,28 @@ Stage 4, pass 2
 Stage 4, pass 3
 Stage 4, pass 4
 Stage 5, pass 0
-Stage 5, pass 1
-Stage 5, pass 2
-Monitoring simulation with http://localhost:43009
+Monitoring simulation with http://localhost:38749
 panic: /home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/mnist/data/train-images-idx3-ubyte.gz not found.
 
-goroutine 151 [running]:
-gitlab.com/akita/dnn/dataset/mnist.openGZip({0xc00018e1c0, 0x69})
+goroutine 15 [running]:
+gitlab.com/akita/dnn/dataset/mnist.openGZip({0xc0002a6230, 0x69})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/mnist/mnist.go:87 +0x99
-gitlab.com/akita/dnn/dataset/mnist.(*DataSet).OpenTrainingFile(0xc002d908c0)
+gitlab.com/akita/dnn/dataset/mnist.(*DataSet).OpenTrainingFile(0xc002d8e660)
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/mnist/mnist.go:30 +0x109
-gitlab.com/akita/dnn/dataset/mnist.NewTrainingDataSource({0x1561c48?, 0xc003a0a5a0})
+gitlab.com/akita/dnn/dataset/mnist.NewTrainingDataSource({0x1561c48?, 0xc0039fc5a0})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/mnist/datasource.go:26 +0xa5
-gitlab.com/akita/mgpusim/v3/benchmarks/dnn/lenet.(*Benchmark).createTrainer(0xc001613080)
+gitlab.com/akita/mgpusim/v3/benchmarks/dnn/lenet.(*Benchmark).createTrainer(0xc00230b800)
 	/home/user/workplace/go/mgpusim/benchmarks/dnn/lenet/benchmark.go:118 +0x110
-gitlab.com/akita/mgpusim/v3/benchmarks/dnn/lenet.(*Benchmark).init(0xc001613080)
+gitlab.com/akita/mgpusim/v3/benchmarks/dnn/lenet.(*Benchmark).init(0xc00230b800)
 	/home/user/workplace/go/mgpusim/benchmarks/dnn/lenet/benchmark.go:56 +0x6a
-gitlab.com/akita/mgpusim/v3/benchmarks/dnn/lenet.(*Benchmark).Run(0xc001613080)
+gitlab.com/akita/mgpusim/v3/benchmarks/dnn/lenet.(*Benchmark).Run(0xc00230b800)
 	/home/user/workplace/go/mgpusim/benchmarks/dnn/lenet/benchmark.go:185 +0x36
-gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run.func1({0x155a740, 0xc001613080}, 0x0?)
+gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run.func1({0x155a740, 0xc00230b800}, 0x0?)
 	/home/user/workplace/go/mgpusim/samples/runner/runner.go:254 +0x6c
 created by gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run
 	/home/user/workplace/go/mgpusim/samples/runner/runner.go:247 +0x1ca
+Stage 5, pass 1
+Stage 5, pass 2
 Stage 5, pass 3
 Stage 5, pass 4
 Stage 5, pass 5
@@ -262,85 +138,85 @@ Stage 6, pass 0
 Stage 6, pass 1
 Stage 6, pass 2
 Stage 6, pass 3
+Monitoring simulation with http://localhost:34353
 Stage 6, pass 4
 Stage 6, pass 5
 Stage 6, pass 6
-Monitoring simulation with http://localhost:44141
 Stage 7, pass 0
 Stage 7, pass 1
 Stage 7, pass 2
 Stage 7, pass 3
 Stage 7, pass 4
+Monitoring simulation with http://localhost:39375
 Stage 7, pass 5
 Stage 7, pass 6
 Stage 7, pass 7
 Stage 8, pass 0
-Monitoring simulation with http://localhost:38731
 Stage 8, pass 1
 Stage 8, pass 2
 Stage 8, pass 3
 Stage 8, pass 4
 Stage 8, pass 5
+Monitoring simulation with http://localhost:46705
 Stage 8, pass 6
 Stage 8, pass 7
 Stage 8, pass 8
-Monitoring simulation with http://localhost:44991
-Monitoring simulation with http://localhost:46869
+Monitoring simulation with http://localhost:37575
 panic: /home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/mnist/data/train-images-idx3-ubyte.gz not found.
 
-goroutine 153 [running]:
-gitlab.com/akita/dnn/dataset/mnist.openGZip({0xc0002a6230, 0x69})
+goroutine 162 [running]:
+gitlab.com/akita/dnn/dataset/mnist.openGZip({0xc00027a230, 0x69})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/mnist/mnist.go:87 +0x99
-gitlab.com/akita/dnn/dataset/mnist.(*DataSet).OpenTrainingFile(0xc000bcb280)
+gitlab.com/akita/dnn/dataset/mnist.(*DataSet).OpenTrainingFile(0xc0006aa1c0)
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/mnist/mnist.go:30 +0x109
-gitlab.com/akita/dnn/dataset/mnist.NewTrainingDataSource({0x155e0e8?, 0xc003a165a0})
+gitlab.com/akita/dnn/dataset/mnist.NewTrainingDataSource({0x155e0e8?, 0xc00395e5a0})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/mnist/datasource.go:26 +0xa5
-gitlab.com/akita/mgpusim/v3/benchmarks/dnn/minerva.(*Benchmark).createTrainer(0xc002b0d080)
+gitlab.com/akita/mgpusim/v3/benchmarks/dnn/minerva.(*Benchmark).createTrainer(0xc00383b500)
 	/home/user/workplace/go/mgpusim/benchmarks/dnn/minerva/benchmark.go:93 +0x110
-gitlab.com/akita/mgpusim/v3/benchmarks/dnn/minerva.(*Benchmark).init(0xc002b0d080)
+gitlab.com/akita/mgpusim/v3/benchmarks/dnn/minerva.(*Benchmark).init(0xc00383b500)
 	/home/user/workplace/go/mgpusim/benchmarks/dnn/minerva/benchmark.go:56 +0x6a
-gitlab.com/akita/mgpusim/v3/benchmarks/dnn/minerva.(*Benchmark).Run(0xc002b0d080)
+gitlab.com/akita/mgpusim/v3/benchmarks/dnn/minerva.(*Benchmark).Run(0xc00383b500)
 	/home/user/workplace/go/mgpusim/benchmarks/dnn/minerva/benchmark.go:160 +0x36
-gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run.func1({0x1556c60, 0xc002b0d080}, 0x0?)
+gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run.func1({0x1556c60, 0xc00383b500}, 0x0?)
 	/home/user/workplace/go/mgpusim/samples/runner/runner.go:254 +0x6c
 created by gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run
 	/home/user/workplace/go/mgpusim/samples/runner/runner.go:247 +0x1ca
 Stage 1, pass 0
-Monitoring simulation with http://localhost:42103
-Monitoring simulation with http://localhost:37547
-Monitoring simulation with http://localhost:38103
+Monitoring simulation with http://localhost:35559
+Monitoring simulation with http://localhost:44819
+Monitoring simulation with http://localhost:43487
 Number node 16, number connection 16
-Monitoring simulation with http://localhost:36605
-Monitoring simulation with http://localhost:46803
-Monitoring simulation with http://localhost:35213
+Monitoring simulation with http://localhost:45301
+Monitoring simulation with http://localhost:40717
+Monitoring simulation with http://localhost:45779
 Number of non-zero elements -2147483648
-Monitoring simulation with http://localhost:41325
+Monitoring simulation with http://localhost:45817
 Stage 1, pass 1
-Monitoring simulation with http://localhost:42181
+Monitoring simulation with http://localhost:42725
 panic: open /home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/imagenet/wnids.txt: no such file or directory
 
-goroutine 163 [running]:
+goroutine 150 [running]:
 gitlab.com/akita/dnn/dataset/imagenet.dieOnErr(...)
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/imagenet/imagenet.go:164
 gitlab.com/akita/dnn/dataset/imagenet.NewDataSet(0x1)
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/imagenet/imagenet.go:44 +0x55f
 gitlab.com/akita/dnn/dataset/imagenet.NewTrainingDataSource(...)
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/dataset/imagenet/datasource.go:21
-gitlab.com/akita/mgpusim/v3/benchmarks/dnn/vgg16.(*Benchmark).createTrainer(0xc0005cf380)
+gitlab.com/akita/mgpusim/v3/benchmarks/dnn/vgg16.(*Benchmark).createTrainer(0xc002879980)
 	/home/user/workplace/go/mgpusim/benchmarks/dnn/vgg16/benchmark.go:126 +0x18f
-gitlab.com/akita/mgpusim/v3/benchmarks/dnn/vgg16.(*Benchmark).init(0xc0005cf380)
+gitlab.com/akita/mgpusim/v3/benchmarks/dnn/vgg16.(*Benchmark).init(0xc002879980)
 	/home/user/workplace/go/mgpusim/benchmarks/dnn/vgg16/benchmark.go:55 +0x6a
-gitlab.com/akita/mgpusim/v3/benchmarks/dnn/vgg16.(*Benchmark).Run(0xc0005cf380)
+gitlab.com/akita/mgpusim/v3/benchmarks/dnn/vgg16.(*Benchmark).Run(0xc002879980)
 	/home/user/workplace/go/mgpusim/benchmarks/dnn/vgg16/benchmark.go:193 +0x36
-gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run.func1({0x15905c0, 0xc0005cf380}, 0x0?)
+gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run.func1({0x15905c0, 0xc002879980}, 0x0?)
 	/home/user/workplace/go/mgpusim/samples/runner/runner.go:254 +0x6c
 created by gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run
 	/home/user/workplace/go/mgpusim/samples/runner/runner.go:247 +0x1ca
-Monitoring simulation with http://localhost:41931
-2023/08/03 14:24:49 /home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/training/trainer.go:34: Epoch 0
-2023/08/03 14:24:49 /home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/training/trainer.go:41: Batch 0
-2023/08/03 14:24:50 /home/user/workplace/go/mgpusim/driver/driver.go:117: Panic: Could not find parent task
-goroutine 152 [running]:
+Monitoring simulation with http://localhost:40223
+2023/08/04 08:50:22 /home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/training/trainer.go:34: Epoch 0
+2023/08/04 08:50:22 /home/user/workplace/go/pkg/mod/gitlab.com/akita/dnn@v0.5.4/training/trainer.go:41: Batch 0
+2023/08/04 08:50:22 /home/user/workplace/go/mgpusim/driver/driver.go:117: Panic: Could not find parent task
+goroutine 150 [running]:
 runtime/debug.Stack()
 	/usr/local/go/src/runtime/debug/stack.go:24 +0x65
 runtime/debug.PrintStack()
@@ -349,33 +225,33 @@ gitlab.com/akita/mgpusim/v3/driver.(*Driver).runEngine.func1()
 	/home/user/workplace/go/mgpusim/driver/driver.go:118 +0x58
 panic({0xb79a80, 0x1548a10})
 	/usr/local/go/src/runtime/panic.go:884 +0x212
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleReqEnd(0xc000311490, {{0xc003d891f0, 0xd}, {0xc003d88f65, 0x5}, {0xc41755, 0x7}, {0xb3b93f, 0xc}, {0xc0001c48d0, ...}, ...})
+gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleReqEnd(0xc0002f1490, {{0xc003dd5430, 0xd}, {0xc003dd51a5, 0x5}, {0xc41755, 0x7}, {0xb3b93f, 0xc}, {0xc00002a9f0, ...}, ...})
 	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:311 +0x288
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleTaskEnd(0xc000311490, {{0xc003d891f0, 0xd}, {0xc003d88f65, 0x5}, {0xc41755, 0x7}, {0xb3b93f, 0xc}, {0xc0001c48d0, ...}, ...})
+gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).handleTaskEnd(0xc0002f1490, {{0xc003dd5430, 0xd}, {0xc003dd51a5, 0x5}, {0xc41755, 0x7}, {0xb3b93f, 0xc}, {0xc00002a9f0, ...}, ...})
 	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:358 +0x125
-gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).EndTask(0xc000311490, {{0xc003dc6270, 0xd}, {0x0, 0x0}, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...})
+gitlab.com/akita/mgpusim/v3/timing/cu.(*CPIStackTracer).EndTask(0xc0002f1490, {{0xc003e0c560, 0xd}, {0x0, 0x0}, {0x0, 0x0}, {0x0, 0x0}, {0x0, ...}, ...})
 	/home/user/workplace/go/mgpusim/timing/cu/cpistacktracer.go:231 +0x145
-gitlab.com/akita/akita/v3/tracing.(*traceHook).Func(0x19596c0?, {{0x7f29c479bc18, 0xc000004f00}, 0x18e60c0, {0xc10880, 0xc003ee98c0}, {0x0, 0x0}})
+gitlab.com/akita/akita/v3/tracing.(*traceHook).Func(0xc000180c00?, {{0x7f0b982d4018, 0xc0002aac80}, 0x18e60c0, {0xc10880, 0xc003ee0e10}, {0x0, 0x0}})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/tracehook.go:39 +0x2b5
-gitlab.com/akita/akita/v3/sim.(*HookableBase).InvokeHook(0xc10880?, {{0x7f29c479bc18, 0xc000004f00}, 0x18e60c0, {0xc10880, 0xc003ee98c0}, {0x0, 0x0}})
+gitlab.com/akita/akita/v3/sim.(*HookableBase).InvokeHook(0xc10880?, {{0x7f0b982d4018, 0xc0002aac80}, 0x18e60c0, {0xc10880, 0xc003ee0e10}, {0x0, 0x0}})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/hook.go:81 +0xc4
-gitlab.com/akita/akita/v3/tracing.EndTask({0xc003dc6270, 0xd}, {0x1551640, 0xc000004f00})
+gitlab.com/akita/akita/v3/tracing.EndTask({0xc003e0c560, 0xd}, {0x1551640, 0xc0002aac80})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/api.go:151 +0x155
-gitlab.com/akita/akita/v3/tracing.TraceReqFinalize({0x154b540?, 0xc003a41b00?}, {0x1551640, 0xc000004f00})
+gitlab.com/akita/akita/v3/tracing.TraceReqFinalize({0x154b540?, 0xc00409bb00?}, {0x1551640, 0xc0002aac80})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/tracing/api.go:208 +0x5a
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).handleScalarDataLoadReturn(0xc000004f00, 0xc003d59ce8?, 0xc003a6a700)
+gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).handleScalarDataLoadReturn(0xc0002aac80, 0xc0039edce8?, 0xc0040ce700)
 	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:472 +0x1c9
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInputFromScalarMem(0xc000004f00, 0x4?)
+gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInputFromScalarMem(0xc0002aac80, 0x4?)
 	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:439 +0x75
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInput(0xc000004f00, 0x3f049b6d843ce60f?)
+gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).processInput(0xc0002aac80, 0x3f049b6d843ce60f?)
 	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:171 +0x67
-gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).Tick(0xc000004f00, 0xc00047d8a0?)
+gitlab.com/akita/mgpusim/v3/timing/cu.(*ComputeUnit).Tick(0xc0002aac80, 0xc000dfa040?)
 	/home/user/workplace/go/mgpusim/timing/cu/computeunit.go:120 +0xed
-gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc00047d8a0, {0x154fdc0?, 0xc003a69ad0?})
+gitlab.com/akita/akita/v3/sim.(*TickingComponent).Handle(0xc000dfa040, {0x154fdc0?, 0xc0040cdce0?})
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/ticker.go:140 +0x45
-gitlab.com/akita/akita/v3/sim.(*SerialEngine).Run(0xc0001f4510)
+gitlab.com/akita/akita/v3/sim.(*SerialEngine).Run(0xc000244510)
 	/home/user/workplace/go/pkg/mod/gitlab.com/akita/akita/v3@v3.0.0-alpha.23/sim/serialengine.go:96 +0x367
-gitlab.com/akita/mgpusim/v3/driver.(*Driver).runEngine(0xc0001836c0)
+gitlab.com/akita/mgpusim/v3/driver.(*Driver).runEngine(0xc00029a4e0)
 	/home/user/workplace/go/mgpusim/driver/driver.go:125 +0xaa
 created by gitlab.com/akita/mgpusim/v3/driver.(*Driver).runAsync
 	/home/user/workplace/go/mgpusim/driver/driver.go:108 +0x185
@@ -569,16 +445,16 @@ Stage 18, pass 17
 Stage 18, pass 18
 panic: Allocating 0 bytes.
 
-goroutine 91 [running]:
-gitlab.com/akita/mgpusim/v3/driver/internal.(*memoryAllocatorImpl).Allocate(0x200000?, 0x51e000?, 0xc6f6d00000?, 0x0?)
+goroutine 12 [running]:
+gitlab.com/akita/mgpusim/v3/driver/internal.(*memoryAllocatorImpl).Allocate(0x200000?, 0x2d80000?, 0xcdff176000?, 0x0?)
 	/home/user/workplace/go/mgpusim/driver/internal/memoryallocator.go:104 +0x12a
-gitlab.com/akita/mgpusim/v3/driver.(*Driver).AllocateMemory(0xc000212150?, 0xc00398ecc0, 0x0)
+gitlab.com/akita/mgpusim/v3/driver.(*Driver).AllocateMemory(0xc0001a2150?, 0xc003b11e00, 0x0)
 	/home/user/workplace/go/mgpusim/driver/api.go:137 +0x38
-gitlab.com/akita/mgpusim/v3/benchmarks/shoc/spmv.(*Benchmark).initMem(0xc003a485a0)
+gitlab.com/akita/mgpusim/v3/benchmarks/shoc/spmv.(*Benchmark).initMem(0xc003bde5a0)
 	/home/user/workplace/go/mgpusim/benchmarks/shoc/spmv/spmv.go:126 +0x39d
-gitlab.com/akita/mgpusim/v3/benchmarks/shoc/spmv.(*Benchmark).Run(0xc003a485a0)
+gitlab.com/akita/mgpusim/v3/benchmarks/shoc/spmv.(*Benchmark).Run(0xc003bde5a0)
 	/home/user/workplace/go/mgpusim/benchmarks/shoc/spmv/spmv.go:96 +0x18a
-gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run.func1({0x139d540, 0xc003a485a0}, 0x0?)
+gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run.func1({0x139d540, 0xc003bde5a0}, 0x0?)
 	/home/user/workplace/go/mgpusim/samples/runner/runner.go:254 +0x6c
 created by gitlab.com/akita/mgpusim/v3/samples/runner.(*Runner).Run
 	/home/user/workplace/go/mgpusim/samples/runner/runner.go:247 +0x1ca

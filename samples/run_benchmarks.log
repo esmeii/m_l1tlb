@@ -1,6 +1,6 @@
 Im2Col input [1 1 28 28], kernel [3 3], stride [1 1], padding [0 0], dilation [1 1], output [9 676]
-Kernel Im2Col, Start 0.0000086020, Virtual Time: 7.2909999999999985e-06, Real Time: 1.502899502s
-Kernel Transpose, Start 0.0000303650, Virtual Time: 1.0636999999999997e-05, Real Time: 1.489631208s
+Kernel Im2Col, Start 0.0000086000, Virtual Time: 7.291e-06, Real Time: 1.456140316s
+Kernel Transpose, Start 0.0000303630, Virtual Time: 1.064e-05, Real Time: 1.52304987s
 Im2Col input [1 1 28 28], kernel [3 3], stride [1 1], padding [0 0], dilation [1 1], output [9 676]
-Kernel Im2Col, Start 0.0000007310, Virtual Time: 8.072e-06, Real Time: 1.52069484s
+Kernel Im2Col, Start 0.0000007310, Virtual Time: 8.069999999999999e-06, Real Time: 1.599572889s
 Repeat verified.
