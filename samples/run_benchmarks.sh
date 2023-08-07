@@ -64,9 +64,9 @@ for benchmarkDir in $benchmarkDirs; do
   go build
 
   if [[ "$benchmark" == "xor" ]]; then  # XOR in parallel might caused deadlock issue
-    ./$benchmark -report-all -timing -metric-file-name "baseline" >> ../run_benchmarks.log 2>> ../run_benchmarks.err &
+    ./$benchmark -report-all -timing -metric-file-name "1024l1tlb" >> ../run_benchmarks.log 2>> ../run_benchmarks.err &
   else
-    ./$benchmark -parallel -report-all -timing -metric-file-name "baseline" >> ../run_benchmarks.log 2>> ../run_benchmarks.err &
+    ./$benchmark -parallel -report-all -timing -metric-file-name "1024l1tlb" >> ../run_benchmarks.log 2>> ../run_benchmarks.err &
   fi
   pids="$pids $!"
   runBenchmarks="$runBenchmarks $benchmark"
