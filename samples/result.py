@@ -4,7 +4,7 @@ import csv
 benchmarks = ['aes', 'bfs', 'bitonicsort', 'concurrentkernel', 'fastwalshtransform', 'fir', 'floydwarshall', 'im2col', 'kmeans', 'matrixmultiplication', 'matrixtranspose', 'memcopy', 'pagerank', 'relu', 'stencil2d', 'xor']
 
 result = []
-csv_name = "baseline.csv"
+csv_name = "32setIpoly.csv"
 for benchmark in benchmarks:
     csv_path = os.path.join(benchmark, csv_name)
     ipc_sum = 0

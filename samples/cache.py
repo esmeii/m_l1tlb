@@ -4,8 +4,8 @@ import csv
 benchmarks = ['aes', 'bfs', 'bitonicsort', 'concurrentkernel', 'fastwalshtransform', 'fir', 'floydwarshall', 'im2col', 'kmeans', 'matrixmultiplication', 'matrixtranspose', 'memcopy', 'pagerank', 'relu', 'stencil2d', 'xor']
 
 result = []
-csv_name = "setIpoly.csv"
-output_csv_name = "setIpoly_cache.csv"
+csv_name = "baseline.csv"
+output_csv_name = "baseline_cache.csv"
 
 for benchmark in benchmarks:
     csv_path = os.path.join(benchmark, csv_name)

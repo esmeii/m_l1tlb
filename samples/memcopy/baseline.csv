@@ -1,6 +1,6 @@
 , where, what, value
 0, Driver, kernel_time, 0.000000000000
-1, Driver, total_time, 0.000077989000
+1, Driver, total_time, 0.000077991000
 2, GPU[1].CommandProcessor, kernel_time, 0.000000000000
 3, GPU[1].SA[0].CU[0], cu_inst_count, 0.000000000000
 4, GPU[1].SA[0].CU[0], cu_CPI, NaN

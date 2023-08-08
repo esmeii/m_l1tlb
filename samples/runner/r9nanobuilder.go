@@ -816,7 +816,7 @@ func (b *R9NanoGPUBuilder) buildL2TLB() {
 		WithEngine(b.engine).
 		WithFreq(b.freq).
 		WithNumWays(numWays).
-		WithNumSets(64). //set is 32
+		WithNumSets(32). //set is 32
 		WithNumMSHREntry(64).
 		WithNumReqPerCycle(16).
 		WithPageSize(1 << b.log2PageSize).
